@@ -1,0 +1,18 @@
+{
+  "name": "socialnetworkapi-week18-challenge",
+  "version": "1.0.0",
+  "description": "challenge project",
+  "main": "server.js",
+  "author": "Bryan",
+  "license": "ISC",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^7.0.2"
+  },
+  "devDependencies": {
+    "validator": "^13.11.0"
+  }
+}
