@@ -12,7 +12,8 @@ module.exports = {
     async getSolitaryUser(req, res) {
         try {
             const user = User.findone({ _id: req.params.userId })
-            .select('-__v');
+            .select('-__v')
+            .populate('thoughts');
 
             if (!user) {
                 return res.status(404).json({ message: 'No User Id found' });
